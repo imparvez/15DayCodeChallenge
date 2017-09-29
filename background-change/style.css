@@ -1,0 +1,29 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    padding: 200px;
+}
+
+.click-me {
+    padding: 20px 30px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #2c3e50;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+    transition: all ease-in-out 300ms;
+    width: 250px;
+    display: inline-block;
+}
+
+.click-me:hover {
+    box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+    transform: translate(0px, -10px) scale(1.2);
+}
