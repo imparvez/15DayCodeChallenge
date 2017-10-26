@@ -1,0 +1,7 @@
+.alert-danger {
+    display: none;
+}
+
+.alert-danger.error {
+    display: block;
+}

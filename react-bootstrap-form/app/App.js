@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
+import './assets/style/style.css'
 
 export default class App extends Component {
     constructor(props){
@@ -9,6 +10,7 @@ export default class App extends Component {
         this.state = {
             'email': '',
             'password': '',
+            'errors': false,
         }
 
         this.onChange = this.onChange.bind(this);
@@ -28,16 +30,26 @@ export default class App extends Component {
                 const emailValidity =  this.validateEmail(value);
                 if(emailValidity) {
                     this.setState({
-                        [event.target.name]: event.target.value
+                        [event.target.name]: event.target.value,
+                        'errors': false
                     });
+                } else {
+                    this.setState({
+                        'errors': true
+                    })
                 }
                 console.log('VALIDITY => ', emailValidity);
             case 'password':
                 const passwordValidity =  this.validatePassword(value);
                 if(passwordValidity) {
                     this.setState({
-                        [event.target.name]: event.target.value
+                        [event.target.name]: event.target.value,
+                        'errors': false
                     });
+                } else {
+                    this.setState({
+                        'errors': true
+                    })
                 }
                 console.log('VALIDITY => ', passwordValidity);
         }
@@ -81,6 +93,7 @@ export default class App extends Component {
                         <label htmlFor="exampleInputPassword1">Password</label>
                         <input name='password' required type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" onChange={this.onChange} />
                     </div>
+                    <small id="errorHelp" className={`${(this.state.errors) ? 'error': '' } alert alert-danger `}>Something is not right</small>
                     <button type="button" className="btn btn-primary" onClick={this.onClick}>Submit</button>
                 </form>
             </div>
