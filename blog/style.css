@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #E7E7E7;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.wrap .app {
+  width: 319px;
+  height: 676px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.wrap .app header {
+  margin: 50px 0 15px 0;
+  border-bottom: 1px solid #C4C4C4;
+  padding-bottom: 10px;
+}
+
+.wrap .app header h1 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 35px;
+  letter-spacing: 0.01em;
+  color: #414851;
+  margin-bottom: 10px;
+}
+
+.wrap .app header h4 {
+  font-family: Roboto;
+  font-size: 14px;
+  color: #898D96;
+}
+
+.wrap .app .content .desc .descCard {
+  width: 100%;
+  height: 237px;
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.wrap .app .content .desc .descCard:last-child {
+  margin-top: 20px;
+}
+
+.wrap .app .content .desc .descCard:last-child .rectImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrap .app .content .desc .descCard:last-child .rectImages img {
+  width: 30%;
+  height: 118px;
+  border-radius: 10px;
+}
+
+.wrap .app .content .desc .descCard .avatar {
+  width: 36px;
+  height: 36px;
+  float: left;
+  margin-right: 10px;
+}
+
+.wrap .app .content .desc .descCard p.name {
+  font-family: Roboto;
+  font-size: 14px;
+  color: #454B55;
+  padding: 10px 0 0 0;
+}
+
+.wrap .app .content .desc .descCard .sqImages {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrap .app .content .desc .descCard .sqImages .square {
+  width: 48%;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.wrap .app .content .desc .descCard .description {
+  font-family: Roboto;
+  line-height: 13px;
+  font-size: 12px;
+  color: #A2A5A9;
+  margin-top: 10px;
+  line-height: 18px;
+}
+
+.wrap .app .content .desc .descCard span {
+  float: right;
+  margin-top: -10px;
+  font-family: Roboto;
+  font-size: 12px;
+  color: #9FA2A7;
+}
+
+.wrap img {
+  position: relative;
+}
+
+@media screen and (max-width: 380px) {
+  .iPhone {
+    display: none;
+  }
+  .wrap .app {
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+  }
+}
