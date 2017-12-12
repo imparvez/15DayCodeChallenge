@@ -34,7 +34,7 @@ body {
   position: relative;
 }
 
-.wrap .app {
+.app {
   width: 319px;
   height: 676px;
   background: #fff;
@@ -47,13 +47,13 @@ body {
   overflow: hidden;
 }
 
-.wrap .app header {
+.app header {
   margin: 50px 0 15px 0;
   border-bottom: 1px solid #C4C4C4;
   padding-bottom: 10px;
 }
 
-.wrap .app header h1 {
+.app header h1 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 35px;
@@ -62,13 +62,13 @@ body {
   margin-bottom: 10px;
 }
 
-.wrap .app header h4 {
+.app header h4 {
   font-family: Roboto;
   font-size: 14px;
   color: #898D96;
 }
 
-.wrap .app .content .desc .descCard {
+.descCard {
   width: 100%;
   height: 237px;
   background: #fff;
@@ -78,11 +78,11 @@ body {
   padding: 10px;
 }
 
-.wrap .app .content .desc .descCard:last-child {
+.descCard:last-child {
   margin-top: 20px;
 }
 
-.wrap .app .content .desc .descCard:last-child .rectImages {
+.descCard:last-child .rectImages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,27 +92,27 @@ body {
           justify-content: space-between;
 }
 
-.wrap .app .content .desc .descCard:last-child .rectImages img {
+.descCard:last-child .rectImages img {
   width: 30%;
   height: 118px;
   border-radius: 10px;
 }
 
-.wrap .app .content .desc .descCard .avatar {
+.descCard .avatar {
   width: 36px;
   height: 36px;
   float: left;
   margin-right: 10px;
 }
 
-.wrap .app .content .desc .descCard p.name {
+.descCard p.name {
   font-family: Roboto;
   font-size: 14px;
   color: #454B55;
   padding: 10px 0 0 0;
 }
 
-.wrap .app .content .desc .descCard .sqImages {
+.descCard .sqImages {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,13 +122,13 @@ body {
           justify-content: space-between;
 }
 
-.wrap .app .content .desc .descCard .sqImages .square {
+.descCard .sqImages .square {
   width: 48%;
   height: 120px;
   border-radius: 10px;
 }
 
-.wrap .app .content .desc .descCard .description {
+.descCard .description {
   font-family: Roboto;
   line-height: 13px;
   font-size: 12px;
@@ -137,13 +137,55 @@ body {
   line-height: 18px;
 }
 
-.wrap .app .content .desc .descCard span {
+.descCard span {
   float: right;
   margin-top: -10px;
   font-family: Roboto;
   font-size: 12px;
   color: #9FA2A7;
 }
+
+.brief {
+    height: 78px;
+    padding: 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .brief .briefCard {
+    width: 48%;
+    height: 58px;
+    background: #fff;
+    -webkit-box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 15px 0 0 12px;
+  }
+  
+  .brief .briefCard .avatar {
+    width: 29px;
+    height: 29px;
+    float: left;
+    margin-right: 5px;
+  }
+  
+  .brief .briefCard p {
+    font-family: Roboto;
+    font-size: 15px;
+    color: #454B55;
+    margin-bottom: 0;
+    line-height: 10px;
+  }
+  
+  .brief .briefCard span {
+    font-family: Roboto;
+    font-size: 11px;
+    color: #515760;
+  }
 
 .wrap img {
   position: relative;
