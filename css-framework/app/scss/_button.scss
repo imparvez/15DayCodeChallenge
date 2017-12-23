@@ -1,0 +1,48 @@
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    border-radius: 3px;
+    text-decoration: none;
+    border: 1px solid;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+}
+
+.button-medium {
+    min-height: 40px;
+    min-width: 80px;
+    padding: 5px;
+}
+
+.button-default {
+    color: #fff;
+
+    &:hover {
+        color: #C33764;
+        background: #fff;
+    }
+}
+
+.button-primary {
+    color: #2980b9;
+}
+
+.button-success {
+    color: #27ae60;
+}
+
+.button-info {
+    color: #3498db;
+}
+
+.button-warning {
+    color: #f39c12;
+}
+
+.button-danger {
+    color: #c0392b;
+}
